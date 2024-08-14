@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSA Encryption/Decryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Description">
+        <h2>ITE A2</h2>
+        <p>This is a project about RSA Encryption and Decryption. With its function it contains limits to how it is used.</p>
+        <h2>How to use</h2>
+        <p>This Encryption and Decryption method only works with only UPPER CASE text "HELLO", so feel free to type in anything</p>
+    </div>
+    <div class="container">
+        <h1>RSA Encryption/Decryption</h1>
+        <div class="form-group">
+            <label for="pValue">Prime p:</label>
+            <input type="text" id="pValue" placeholder="Enter p" value="43">
+        </div>
+        <div class="form-group">
+            <label for="qValue">Prime q:</label>
+            <input type="text" id="qValue" placeholder="Enter q" value="59">
+        </div>
+        <div class="form-group">
+            <label for="eValue">Public Exponent e:</label>
+            <input type="text" id="eValue" placeholder="Enter e" value="13">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <input type="text" id="message" placeholder="Enter message" value="STOP">
+        </div>
+        <div class="form-group">
+            <button id="encryptBtn">Encrypt</button>
+            <button id="decryptBtn">Decrypt</button>
+            <button id="cleanBtn">Clear</button>
+        </div>
+        <div class="form-group">
+            <label for="output">Output:</label>
+            <input type="text" id="output" readonly>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <h2>Made with love by:</h2>
+    <h3>- Ngeth Kanikar</h3>
+    <h3>- Chem Chanvichea</h3>
+    <h3>- Chhim Sokvisoth</h3>
+    <h3>- Chum Veasna</h3>
+    <h3>- Hong Laysin</h3>
+</footer>
+</html>

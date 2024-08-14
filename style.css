@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(#aa1d5b, #901724);
+    position: relative;
+    flex-direction: column;
+    padding-top: 200px; /* Add padding to create space between Description and container */
+    overflow-x: hidden;
+}
+
+.Description {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    z-index: 10; /* Ensures it stays above other elements */
+}
+
+.container {
+    background: linear-gradient(#901723, #901d5b);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
+    width: 100%;
+    color: #030202;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.container h1 {
+    color: #000000;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #891f1f;
+    border-radius: 4px;
+    color: #901d5b;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e94701;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d07767;
+}
+footer{
+    text-align: left;
+}
