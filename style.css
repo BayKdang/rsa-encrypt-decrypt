@@ -1,27 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     background: linear-gradient(#aa1d5b, #901724);
-    position: relative;
-    flex-direction: column;
-    padding-top: 200px; /* Add padding to create space between Description and container */
     overflow-x: hidden;
+}
+
+header {
+    background: transparent; /* No background needed */
+    padding: 20px;
+    position: relative; /* Position relative to control its children */
+    z-index: 10; /* Ensures it stays above other content */
 }
 
 .Description {
     text-align: left;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
     color: rgb(0, 0, 0);
     font-size: 18px;
-    z-index: 10; /* Ensures it stays above other elements */
 }
 
 .container {
@@ -30,9 +24,9 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 420px;
-    width: 100%;
+    width: 90%;
     color: #030202;
-    
+    margin: 20px auto; /* Centers the container and adds space from the header */
 }
 
 .form-group {
@@ -44,7 +38,7 @@ body {
 }
 
 input[type="text"] {
-    width: 80%;
+    width: 80%; /* Full width of the container */
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #891f1f;
@@ -64,6 +58,54 @@ button {
 button:hover {
     background-color: #d07767;
 }
-footer{
-    text-align: left;
+
+footer {
+    text-align: center; /* Center the footer text */
+    padding: 20px;
+    background: transparent;
+}
+@media (max-width: 768px) {
+    .Description {
+        font-size: 16px; /* Slightly smaller font size on tablets */
+    }
+    
+    .container {
+        padding: 15px;
+        width: 95%; /* Increase width on smaller screens */
+    }
+    
+    .container h1 {
+        font-size: 1.5em; /* Adjust header size */
+    }
+    
+    input[type="text"] {
+        padding: 6px; /* Adjust padding */
+    }
+    
+    button {
+        padding: 8px 12px; /* Adjust button size */
+    }
+}
+
+@media (max-width: 480px) {
+    .Description {
+        font-size: 14px; /* Smaller font size on phones */
+    }
+    
+    .container {
+        padding: 10px;
+        width: 100%; /* Full width on phones */
+    }
+    
+    .container h1 {
+        font-size: 1.2em; /* Adjust header size */
+    }
+    
+    input[type="text"] {
+        padding: 5px; /* Adjust padding */
+    }
+    
+    button {
+        padding: 6px 10px; /* Adjust button size */
+    }
 }
