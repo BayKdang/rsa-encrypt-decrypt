@@ -14,7 +14,7 @@ header {
 
 .Description {
     text-align: left;
-    color: rgb(0, 0, 0);
+    color: rgb(255,255,255);
     font-size: 18px;
 }
 
@@ -25,7 +25,7 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 420px;
     width: 90%;
-    color: #030202;
+    color: rgb(255,255,255);
     margin: 20px auto; /* Centers the container and adds space from the header */
 }
 
