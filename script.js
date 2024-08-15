@@ -68,7 +68,7 @@ function encrypt() {
     let encryptedMessage = '';
     for (const block of blocks) {
         const encryptedBlock = modPow(block, e, n);
-        encryptedMessage += encryptedBlock + ' ';
+        encryptedMessage += encryptedBlock.toString().padStart(4, '0') + ' ';
     }
 
     document.getElementById('output').value = encryptedMessage.trim();
